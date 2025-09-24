@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Info Box 1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow-y: auto;
+      font-family: 'Lucida Console';;
+      background-image: url('neww.jfif');
+
+    }
+
+    header {
+      background-color: #00000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .back-button {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .info-section {
+      height: 70vh;
+      width: 80%;
+      margin: 40px auto;
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .info-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+      border-radius: 20px;
+    }
+
+    .info-section p {
+      position: relative;
+      z-index: 1;
+      font-size: 1.5em;
+      max-width: 600px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 12px;
+    }
+
+    .info-section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .reference-section {
+      height: auto;
+      min-height: 300px;
+      width: 80%;
+      margin: 40px auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 30px;
+      color: #333;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .reference-section:hover {
+      transform: scale(1.02);
+    }
+
+    .reference-section h2 {
+      margin-bottom: 20px;
+    }
+
+    .reference-section ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 1em;
+    }
+
+    .reference-section li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-button">← Back</a>
+    <h1>MEMBERS AND REFERENCES</h1>
+  </header>
+
+  <main>
+    <section class="info-section" style="background-image: url('img1.jpg');">
+      <p>Hernandez, Justine Dominic C.</p>
+      <p>Apellado, Hannah Lyrae P.</p>
+      <p>Estremera Angelo</p>
+      <p>Dionela, Reinne</p>
+      <p>Silva, Kyle</p>
+      <p>Norcio, Gabriel P.</p>
+      <p>Bartolata, Domnic Andrei</p>
+      <p>Austria Marc Lhester</p>
+    </section>
+
+    <section class="reference-section">
+      <h2>REFERENCES</h2>
+      <ul>
+         <li>https://medlineplus.gov/druginfo/meds/a685001.html</li>
+        <li>https://www.apollohospitals.com/medicines/amoxicillin?fbclid=IwY2xjawNAPadleHRuA2FlbQIxMABicmlkETFQQUlrWW1IVDAzZWV4Z2dLAR45JEOk38dmbNYoK-L8s4BqQX1WQbyIOGzIpGpAKZEDjeq52bpxV_oXGPtPfw_aem_L_0mVkzJ0DULRhQ3YOlbSQ</li>
+        <li>https://www.apollohospitals.com/medicines/amoxicillin" target="_blank">https://www.apollohospitals.com/medicines/amoxicillin</li>
+        <li>https://www.fda.gov/consumers/consumer-updates/where-and-how-dispose-unused-medicines?fbclid=IwY2xjawNAPnxleHRuA2FlbQIxMABicmlkETFQQUlrWW1IVDAzZWV4Z2dLAR74pfTzPuh1cGIgJtsdEusgDB5OWLpcSponfNtBZ8iOjqjPVTAHY0vmz_7tiw_aem_LwYrz1-UB3GLBCZAgfORmw#:~:text=Remove%20the%20drugs%20from%20their,the%20trash%20looking%20for%20drugs</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

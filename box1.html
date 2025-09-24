@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Info Box 1</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lucida Console', monospace;
+      overflow-y: auto;
+      background-image: url('neww.jfif');
+    }
+
+    header {
+      background-color: #000000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .back-button {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .info-section {
+      height: auto;
+      width: 80%;
+      margin: 40px auto;
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      padding: 40px 20px;
+    }
+
+    .info-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+      border-radius: 20px;
+    }
+
+    .info-section h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .info-section p {
+      position: relative;
+      z-index: 1;
+      font-size: 1.3em;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px 30px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 12px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .info-section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-button">← Back</a>
+    <h1>WHAT IS AMOXICILLIN?</h1>
+  </header>
+
+  <main>
+    <section class="info-section" style="background-image: url('none.jfif');">
+      <div>
+        <h1>INTRODUCTION</h1>
+        <p>
+          Penicillin is the source of amoxicillin, a broad-spectrum antibiotic. By stopping bacteria 
+          from forming cell walls, it is well known for its capacity to fight off different types 
+          of bacteria, eventually weakening and killing them. Amoxicillin is effective against a 
+          variety of infections brought on by susceptible bacteria because of its activity. It 
+          comes in a variety of forms, such as pills, capsules, and liquid solutions, and is 
+          typically safe for people of all ages, including children.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-section" style="background-image: url('none.jpg');">
+      <div>
+        <h1>DOSAGE GUIDELINES</h1>
+        <p>
+          Amoxicillin comes in a variety of forms, such as tablets, capsules, chewable tablets, and 
+          liquid suspension. The dosage of amoxicillin varies based on the patient's age, weight, 
+          and the type of illness being treated. Depending on the severity of the infection, people 
+          usually take 500 mg every eight hours or 875 mg every twelve hours. The dosage for 
+          pediatric patients is decided by the kind of infection and body weight. Pediatricians 
+          typically recommend a liquid medication for children. For more severe infections, the dose 
+          may be increased, and in some cases, a 1,000 mg dose may be given.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-section" style="background-image: url('none.jpg');">
+      <div>
+        <h1>ADMINISTRATION</h1>
+        <p>
+          Amoxicillin can be taken with or without food, although taking it with food may help reduce 
+          stomach upset. Liquid forms should be shaken well before each dose to ensure proper suspension.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-section" style="background-image: url('none.jpg');">
+      <div>
+        <h1>REMINDER</h1>
+        <p>
+          Always complete the full prescribed course of amoxicillin, even if symptoms improve early, 
+          to prevent the infection from returning and to reduce the risk of antibiotic resistance.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
